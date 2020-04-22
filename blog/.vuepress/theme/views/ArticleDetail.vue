@@ -11,6 +11,7 @@
             <el-breadcrumb-item>{{$page.title}}</el-breadcrumb-item>
           </el-breadcrumb>
         </div>
+        <div style="font-size:14px"> <i class="fa fa-calendar" aria-hidden="true"></i> {{$frontmatter.date}}</div>
         <Content></Content>
       </div>
     </MBlock>

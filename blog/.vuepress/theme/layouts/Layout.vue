@@ -126,6 +126,7 @@ export default {
     }
     .right-side {
       width: 700px;
+      min-width: 100px;
       height: auto;
     }
   }
