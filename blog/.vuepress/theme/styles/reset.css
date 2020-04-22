@@ -1,0 +1,185 @@
+body,
+div,
+fieldset,
+legend,
+span,
+header,
+footer,
+nav,
+section,
+aside,
+article,
+ul,
+li,
+dl,
+dt,
+dd,
+li,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+i,
+b,
+figure,
+figcaption,
+p {
+  padding: 0;
+  margin: 0;
+  font-style: normal;
+  text-decoration: none;
+  border: none;
+  border: 0;
+  box-sizing: border-box;
+  -font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "å¾®è½¯é›…é»‘", Arial, sans-serif;
+}
+body:focus,
+div:focus,
+fieldset:focus,
+legend:focus,
+span:focus,
+header:focus,
+footer:focus,
+nav:focus,
+section:focus,
+aside:focus,
+article:focus,
+ul:focus,
+li:focus,
+dl:focus,
+dt:focus,
+dd:focus,
+li:focus,
+a:focus,
+p:focus,
+h1:focus,
+h2:focus,
+h3:focus,
+h4:focus,
+h5:focus,
+h6:focus,
+i:focus,
+b:focus,
+figure:focus,
+figcaption:focus,
+p:focus {
+  outline: none;
+}
+textarea:focus,
+button:focus,
+input:focus,
+select:focus {
+  outline: none;
+}
+[data-theme="1"] {
+  background: #90CAF9;
+}
+[data-theme="2"] {
+  background: #81D4FA;
+}
+[data-theme="3"] {
+  background: #80CBC4;
+}
+[data-theme="4"] {
+  background: #C5E1A5;
+}
+[data-theme="5"] {
+  background: #FFE082;
+}
+[data-theme="6"] {
+  background: #FFAB91;
+}
+[data-theme="7"] {
+  background: #CE93D8;
+}
+[data-theme="8"] {
+  background: #B39DDB;
+}
+[data-theme="9"] {
+  background: #EF9A9A;
+}
+[data-theme="10"] {
+  background: #CE93D8;
+}
+[data-theme="11"] {
+  background: #BCAAA4;
+}
+[data-theme="12"] {
+  background: #B0BEC5;
+}
+[data-title-theme='1'] {
+  background: #1E88E5;
+}
+[data-title-theme='2'] {
+  background: #039BE5;
+}
+[data-title-theme='3'] {
+  background: #00897B;
+}
+[data-title-theme='4'] {
+  background: #7CB342;
+}
+[data-title-theme='5'] {
+  background: #FFB300;
+}
+[data-title-theme='6'] {
+  background: #F4511E;
+}
+[data-title-theme='7'] {
+  background: #8E24AA;
+}
+[data-title-theme='8'] {
+  background: #5E35B1;
+}
+[data-title-theme='9'] {
+  background: #E53935;
+}
+[data-title-theme='10'] {
+  background: #8E24AA;
+}
+[data-title-theme='11'] {
+  background: #6D4C41;
+}
+[data-title-theme='12'] {
+  background: #546E7A;
+}
+[data-color-theme='1'] {
+  color: #1E88E5;
+}
+[data-color-theme='2'] {
+  color: #039BE5;
+}
+[data-color-theme='3'] {
+  color: #00897B;
+}
+[data-color-theme='4'] {
+  color: #7CB342;
+}
+[data-color-theme='5'] {
+  color: #FFB300;
+}
+[data-color-theme='6'] {
+  color: #F4511E;
+}
+[data-color-theme='7'] {
+  color: #8E24AA;
+}
+[data-color-theme='8'] {
+  color: #5E35B1;
+}
+[data-color-theme='9'] {
+  color: #E53935;
+}
+[data-color-theme='10'] {
+  color: #8E24AA;
+}
+[data-color-theme='11'] {
+  color: #6D4C41;
+}
+[data-color-theme='12'] {
+  color: #546E7A;
+}

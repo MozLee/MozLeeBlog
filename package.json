@@ -1,0 +1,23 @@
+{
+  "name": "mozlee-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vuepress dev blog",
+    "build": "vuepress build blog"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "less": "^3.11.1",
+    "less-loader": "^5.0.0",
+    "vuepress": "^1.4.1"
+  },
+  "dependencies": {
+    "core-js": "^2.6.11",
+    "element-ui": "^2.13.1",
+    "lodash": "^4.17.15"
+  }
+}
