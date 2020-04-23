@@ -42,6 +42,8 @@ export default {
     font-weight: bold;
     position: relative;
     overflow: hidden;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     .title-snow {
       position: absolute;
       right: -5px;

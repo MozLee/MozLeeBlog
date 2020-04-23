@@ -39,7 +39,7 @@ export default {
   created () {
     const numConfig =
       this.$_get(this.$site, 'themeConfig.indexArticleNumber') || 5
-    const pages = this.$_get(this.$site, 'pages')
+    const pages = this.$_get(this.$site, 'pages').reverse()
     const realNum = pages.length || 0
     this.list = realNum > numConfig ? pages.splice(0, 5) : pages
     console.log(this.list[0])

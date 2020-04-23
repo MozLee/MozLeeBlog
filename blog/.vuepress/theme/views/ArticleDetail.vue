@@ -2,14 +2,13 @@
   <div class="article-detail">
     <MBlock :title="`<i class='fa fa-file-text'></i> ${$page.title}`">
       <div class="article-content">
+        <el-page-header @back="goBack" :content="$page.title">
+        </el-page-header>   
         <div class="bread-container">
-          <el-breadcrumb separator="/">
+          <!-- <el-breadcrumb separator="/">
             <el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
-            <el-breadcrumb-item>
-              <a href="/">文章</a>
-            </el-breadcrumb-item>
             <el-breadcrumb-item>{{$page.title}}</el-breadcrumb-item>
-          </el-breadcrumb>
+          </el-breadcrumb> -->
         </div>
         <div style="font-size:14px;padding-top:10px">
           <i class="fa fa-calendar" aria-hidden="true"></i>
@@ -33,6 +32,10 @@ export default {
     }
   },
   methods: {
+    goBack(){
+      //  window.history.length > 1 ? this.$router.go(-1) : this.$router.push('/')
+      this.$router.push('/')
+    },
     reRender () {
       let headers = JSON.parse(JSON.stringify(this.$page.headers))
       headers = headers.filter(v => {

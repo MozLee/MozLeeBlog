@@ -1,6 +1,6 @@
 <template>
   <div>
-    <MBlock title="<i class='fa fa-heart'></i> 搜索" class="search-container">
+    <MBlock title="<i class='fa fa-search'></i> 搜索" class="search-container">
       <el-autocomplete
         class="inline-input"
         v-model="state1"

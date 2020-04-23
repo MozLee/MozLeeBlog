@@ -2,7 +2,7 @@
 title: Git&Github
 lang: zh-cn
 description: 如何设置github
-date: 2017/02/26 20:46:25
+date: 2017/02/26 
 ---
 ## git
 
@@ -15,11 +15,7 @@ date: 2017/02/26 20:46:25
 - 缓存区：在工作区和版本库之间做一个缓存
 - 版本库：最终成型的版本
 
-### 分区test
-### 分区test2
 ## 命令
-### 命令1
-#### sadsadasdasd
 初始化目录，把一个目录变成git可以管理的工作区
 ``` shell
 git init
