@@ -4,7 +4,10 @@
       v-for="item in list" :key="item.key"
       :title="`<i class='fa fa-bookmark'></i> ${item.frontmatter.title||item.title}`">
       <p>{{item.frontmatter.description||item.title}}</p>
-      <a href="#" data-color-theme="1" class="view-article" @click="goView(item)">查看</a>
+      <div class="article-footer">
+        <div> <i class='fa fa-clock-o'></i> {{item.frontmatter.date||"时间都去哪了"}}</div>
+        <a href="#" data-color-theme="1" class="view-article" @click="goView(item)">查看详情</a>
+      </div>
     </MBlock>
   </div>
 </template>
@@ -22,6 +25,12 @@ export default {
   methods: {
     goView (articleInfo) {
       console.log(articleInfo)
+      if (articleInfo.regularPath === '/') {
+        this.$message({
+          message: '这篇文章不支持查看,欣赏其他的吧~',
+          type: 'warning'
+        })
+      }
       this.$router.push(articleInfo.regularPath, () => {
 
       })
@@ -42,6 +51,12 @@ export default {
 .index-article-container {
   .view-article {
     transition: all 0.2s linear;
+  }
+  .article-footer{
+    color: #999;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
   }
 }
 </style>

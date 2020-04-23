@@ -5,15 +5,22 @@
       <div class="main">
         <div class="left-side">
           <Infomation></Infomation>
+          <MSearch></MSearch>
+          <TOC v-show="$page.regularPath!=='/'"></TOC>
         </div>
         <div class="right-side">
           <IndexArticle v-show="$page.regularPath==='/'"></IndexArticle>
           <ArticleDetail v-show="$page.regularPath!=='/'"></ArticleDetail>
         </div>
       </div>
-      <Nav :navList="navList"></Nav>
+      <!-- <Nav :navList="navList"></Nav> -->
       <!-- <Content /> -->
+      <div class="footer">
+        <SiteInfo></SiteInfo>
+      </div>
     </div>
+    <el-backtop target=".moz-container" :right="50">
+    </el-backtop>
   </div>
 </template>
 <script>
@@ -22,13 +29,17 @@ import Nav from '../components/Nav'
 import Infomation from '../views/Infomation'
 import IndexArticle from '../views/IndexArticle'
 import ArticleDetail from '../views/ArticleDetail'
-
+import SiteInfo from '../views/SiteInfo'
+import MSearch from '../views/MSearch'
+import TOC from '../views/TOC'
 export default {
   components: {
-    Nav,
+    MSearch,
     Infomation,
     IndexArticle,
-    ArticleDetail
+    ArticleDetail,
+    SiteInfo,
+    TOC
   },
   data () {
     return {
@@ -68,7 +79,7 @@ export default {
     }
     const bodyEl = document.querySelector('.moz-container')
     const titleELs = document.querySelectorAll('.moz-title')
-    const viewEls = document.querySelectorAll('.index-article-container .view-article')
+    const viewEls = document.querySelectorAll('.view-article')
     let n = 1
     const m = new Date().getSeconds()
     n = Math.floor(m / 5)
@@ -90,17 +101,18 @@ export default {
   height: 100vh;
   overflow: auto;
   transition: background 0.4s linear 0s;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .theme-container {
   width: 80vw;
   max-width: 1000px;
-  height: 100%;
+  height: auto;
   margin: 0 auto;
   .moz-title {
     transition: background 0.4s linear 0s;
   }
   .header {
-    margin-top: 40px;
     width: 100%;
     height: 120px;
     border-radius: 5px;
@@ -123,6 +135,7 @@ export default {
     .left-side {
       width: 260px;
       height: auto;
+      position: relative;
     }
     .right-side {
       width: 700px;

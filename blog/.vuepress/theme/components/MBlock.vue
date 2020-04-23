@@ -32,7 +32,6 @@ export default {
   width: 100%;
   margin-top: 20px;
   box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.17);
-  overflow: hidden;
   border-radius: 5px;
   .m-title {
     width: 100%;
@@ -42,6 +41,7 @@ export default {
     padding-left: 20px;
     font-weight: bold;
     position: relative;
+    overflow: hidden;
     .title-snow {
       position: absolute;
       right: -5px;

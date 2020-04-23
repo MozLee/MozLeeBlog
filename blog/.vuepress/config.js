@@ -10,8 +10,8 @@ module.exports = {
     ],
     info:{
       avator:"/images/avator.png",
-      content:"你好，我叫MozLee~，一名前端开发工程师。此页面还在开发中，慢慢会完善起来~！"
+      content:"你好，我叫MozLee~ 。一名前端开发工程师。目前就职于好未来。"
     },
-    indexArticleNumber:5
+    indexArticleNumber:5,// 首页文章数量
   }
 }
