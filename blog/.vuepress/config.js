@@ -2,7 +2,7 @@
 module.exports = {
   title: 'MozLee',
   description: 'MozLee,瞅啥那',
-  dest: './dist',
+  dest: './web',
   themeConfig: {
     info:{
       avator:"/images/avator.png",
