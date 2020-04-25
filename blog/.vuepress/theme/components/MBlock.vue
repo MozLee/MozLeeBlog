@@ -48,6 +48,7 @@ export default {
     border-top-right-radius: 5px;
     h2{
       font-size: 16px;
+      border: none;
     }
     .title-snow {
       position: absolute;
