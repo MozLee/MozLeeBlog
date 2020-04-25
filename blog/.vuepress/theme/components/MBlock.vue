@@ -1,7 +1,9 @@
 <template>
   <div class="m-block">
     <div class="moz-title m-title" data-title-theme="1">
-      <div class="m-title-content" v-html="title"></div>
+      <div class="m-title-content">
+        <h2  v-html="title"></h2>
+      </div>
       <i class="title-snow fa fa-snowflake-o" aria-hidden="true"></i>
     </div>
     <div class="m-content">
@@ -44,6 +46,9 @@ export default {
     overflow: hidden;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    h2{
+      font-size: 16px;
+    }
     .title-snow {
       position: absolute;
       right: -5px;
@@ -58,6 +63,7 @@ export default {
     min-height: 60px;
     background: #fff;
     padding: 10px 20px;
+   
   }
 }
 </style>
